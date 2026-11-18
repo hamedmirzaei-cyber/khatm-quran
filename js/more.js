@@ -41,7 +41,7 @@ if($("#mi"))$("#mi").onclick=icsOut}
 /* ---------- بیشتر ---------- */
 let sub="menu";
 function more(s){if(s)sub=s;const el=$("#v-more"),back=`<button class="chip" data-sub="menu">‹ بازگشت</button>`;let h="";
-if(sub==="menu"){const I=[["guide","راهنما و نکات ختم","info"],["edu","آموزش","trans"],["duas","دعاها و زیارات","book"],["hadith","احادیث","star"],["quran","قرآن کامل (سوره‌ها و جزءها)","book"],["story","اشتراک‌گذاری پیشرفت (استوری)","share"],["tasb","تسبیح‌شمار","flame"],["rows","همهٔ ردیف‌ها","list"],["about","دربارهٔ ما","heart"]];
+if(sub==="menu"){const I=[["quran","قرآن کامل","book"],["guide","راهنما","info"],["edu","آموزش","trans"],["about","درباره ما","heart"]];
 h=`<h2>بیشتر</h2><p class="muted">راهنما، آموزش، دعا، حدیث و تسبیح</p>${I.map(i=>`<button class="item" data-sub="${i[0]}"><div class="dot" style="background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff">${ic(i[2])}</div><div><div class="t1">${i[1]}</div></div>${ic("prev")}</button>`).join("")}`}
 else if(sub==="duas")h=duasPage();
 else if(sub==="edu")h=`${back}<h2 style="margin-top:12px">آموزش</h2>${EDU.map(e=>`<div class="card"><b>${e.t}</b><ul class="ul">${e.b.map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}`;
@@ -52,7 +52,7 @@ else if(sub==="guide")h=`${back}<h2 style="margin-top:12px">راهنما و نک
 <div class="card"><b>نکات مهم</b><ol class="ul">${NOTES.map(n=>`<li>${n}</li>`).join("")}</ol></div>
 <div class="card"><b>کار با برنامه</b><ul class="ul"><li>در صفحهٔ «امروز» دکمهٔ «شروع خواندن» متن عربی و ترجمه را باز می‌کند؛ با «پخش» می‌توانید گوش دهید و هر کلمه هم‌زمان رنگ می‌گیرد.</li><li>روی هر کلمه بزنید تا تلاوت از همان‌جا ادامه یابد.</li><li>پس از خواندن «خواندم» را بزنید تا در برنامه ثبت شود.</li><li>در «تنظیمات» یادآور روزانه، تم روز/شب، دانلود آفلاین و پشتیبان‌گیری را تنظیم کنید.</li><li>در «تقویم» مناسبت‌ها، احکام روز و رویدادهای شخصی را ببینید.</li></ul></div>`;
 else if(sub==="about")h=`${back}<div style="text-align:center;margin-top:10px"><div class="cal" style="-webkit-mask-image:url(img/bismillah.png);mask-image:url(img/bismillah.png);aspect-ratio:658/491"></div></div>
-<h2 style="text-align:center">ختم قرآن؛ هر روز یک بخش</h2>
+<h2 style="text-align:center">ختم قرآن؛ نورالثقلین</h2><p class="muted" style="text-align:center">دوره بیستم</p>
 <div class="card"><p style="line-height:2.1">این برنامه برای شادی روح همهٔ درگذشتگان و رفتگان ما ساخته شده است. برای همهٔ آن‌ها صلوات و فاتحه‌ای بخوانید.</p></div>
 <div class="card"><p class="muted" style="line-height:2">تهیه و تدوین: منتظران ظهور (هیئت آل یاسین). با نیت خوشنودی، سلامتی و تعجیل در فرج آقا امام زمان (عج) تلاوت شود.</p><div class="cal" style="-webkit-mask-image:url(img/faraj.png);mask-image:url(img/faraj.png);aspect-ratio:620/262;margin-top:10px"></div>
 <div class="row"><a class="btn" href="https://instagram.com/aleyasin128" target="_blank" rel="noopener">اینستاگرام</a><a class="btn" href="https://t.me/aleyasin128" target="_blank" rel="noopener">تلگرام</a><a class="btn" href="https://eitaa.com/aleyasin128" target="_blank" rel="noopener">ایتا</a></div><p class="muted" style="margin-top:8px;text-align:center" dir="ltr">@ALEYASIN128</p></div>

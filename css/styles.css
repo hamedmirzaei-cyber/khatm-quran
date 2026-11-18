@@ -324,3 +324,67 @@ body:has(#reader:not([hidden])) #topbar,body:has(#ob) #topbar,body:has(#splash) 
 #insbar .i{width:17px;height:17px;color:var(--gold)}
 #insbar .go{padding:6px 14px;border-radius:999px;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;font-weight:700}
 #insbar .x{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:var(--tx3)}#insbar .x .i{width:13px;height:13px;color:inherit}
+
+
+/* هویت تصویری نورالثقلین با عکس ارسالی حرم؛ لایه‌های تیره برای خوانایی متن */
+.brandhead.photo-brand{position:relative;isolation:isolate;overflow:hidden;min-height:176px;padding:25px 16px 22px;border:1px solid rgba(227,191,91,.34);border-radius:24px;color:#fff;background:#061a2b url('../img/noor-header.jpg') center 43%/cover no-repeat;box-shadow:0 16px 34px -18px rgba(0,0,0,.72)}
+.brandhead.photo-brand:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,13,27,.34),rgba(3,13,27,.72) 62%,rgba(3,13,27,.88))}
+.brandhead.photo-brand h1{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.7);font-size:1.85rem!important;letter-spacing:.01em}
+.brandhead.photo-brand div{color:#f5d27a!important;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.brandhead.photo-brand small{color:#fff!important;text-shadow:0 1px 8px #000}
+.daily-hero{background:#071b2a url('../img/noor-shrine.jpg') center 48%/cover no-repeat!important;isolation:isolate}
+.daily-hero:before{z-index:-1;inset:0;transform:none!important;animation:none!important;background:linear-gradient(100deg,rgba(3,15,25,.88),rgba(3,15,25,.64) 55%,rgba(3,15,25,.48))!important}
+.daily-hero:after{z-index:-1;background:linear-gradient(0deg,rgba(3,15,25,.25),transparent 60%)!important}
+.daily-hero .muted{color:rgba(255,255,255,.9)!important}
+@media(max-width:380px){.brandhead.photo-brand{min-height:156px;padding:20px 12px}.daily-hero{padding:20px!important}}
+
+
+/* ===== پرداخت نهایی نورالثقلین: خوانایی، سلسله‌مراتب و تقویم ===== */
+.brandhead.photo-brand{min-height:190px;padding:30px 18px 25px;border-radius:26px;background-position:center 42%;border-color:rgba(232,192,91,.48);box-shadow:0 18px 38px -20px rgba(0,0,0,.78),inset 0 0 0 1px rgba(255,255,255,.06)}
+.brandhead.photo-brand:before{background:linear-gradient(180deg,rgba(2,12,25,.24),rgba(2,12,25,.58) 48%,rgba(2,12,25,.84))}
+.brandhead.photo-brand h1{font-size:1.95rem!important;letter-spacing:.015em}
+.brandhead.photo-brand div{font-size:1.3rem!important}
+.daily-hero{border:1px solid rgba(231,190,88,.36);box-shadow:0 20px 42px -22px rgba(0,0,0,.8),inset 0 0 0 1px rgba(255,255,255,.04)}
+.daily-hero .range{font-size:1rem;line-height:2;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6);padding:8px 10px;border-radius:12px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.12)}
+.daily-hero .row{gap:8px}
+.daily-hero .row .btn{min-width:0;padding-inline:12px;font-size:.86rem}
+.daily-hero .ring{filter:drop-shadow(0 3px 10px rgba(0,0,0,.28))}
+.daily-hero .ring .p{stroke:#f5d27a}
+.qprogress{border-color:color-mix(in srgb,var(--gold) 36%,var(--bd));background:linear-gradient(145deg,color-mix(in srgb,var(--gold) 7%,var(--card)),var(--card))}
+.qprogress-head,.qprogress-foot,.qprogress-tags{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.qprogress-head strong{font-size:1.35rem;color:var(--gold);font-variant-numeric:tabular-nums}
+.qprogress-head .muted{margin-top:2px}
+.qprogress .bar{height:10px;margin:13px 0 9px;background:var(--elev)}
+.qprogress .bar i{background:linear-gradient(90deg,var(--a1),var(--gold))}
+.qprogress-foot{font-size:.75rem;color:var(--tx3)}
+.qprogress-tags{justify-content:flex-start;flex-wrap:wrap;margin-top:12px}
+.qprogress-tags span{font-size:.74rem;padding:5px 10px;border-radius:99px;background:var(--elev);color:var(--tx2);border:1px solid var(--bd)}
+.stats .stat{padding:14px 7px 12px;box-shadow:0 8px 20px -16px rgba(0,0,0,.55)}
+.stats .stat b{font-size:1.32rem;line-height:1.5;color:var(--tx)}
+.stats .stat span{display:block;line-height:1.6}
+.reader .rh{box-shadow:0 5px 18px -15px rgba(0,0,0,.6)}
+.reader .rb{scroll-padding-block:18px}
+.reader .v{padding:17px 5px;border-bottom:1px solid color-mix(in srgb,var(--gold) 16%,var(--bd))}
+.reader .ar{line-height:2.45;letter-spacing:.005em;text-align:justify;text-align-last:right}
+.reader .fa{font-size:calc(var(--fs)*.53);line-height:2.05;padding:7px 10px 3px;border-right:2px solid color-mix(in srgb,var(--a1) 65%,transparent);border-radius:0 5px 5px 0;background:color-mix(in srgb,var(--a1) 5%,transparent)}
+.reader .v.pl{background:color-mix(in srgb,var(--gold) 8%,var(--card));border-radius:14px}
+.reader .sura{position:relative;overflow:hidden;box-shadow:0 8px 20px -14px rgba(0,0,0,.6);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent)}
+.reader .sura:after{content:"۞";position:absolute;left:12px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.35);font-size:1.25rem}
+.cg{gap:7px;margin-top:15px}
+.cg>span{font-weight:800;padding:7px 0;color:var(--gold)}
+.cd{border-radius:13px;box-shadow:0 5px 14px -13px rgba(0,0,0,.7);min-height:52px}
+.cd b{font-size:1.02rem}
+.cd small{font-size:.66rem;margin-top:1px}
+.cd.t:not(.s){background:color-mix(in srgb,var(--gold) 10%,var(--card))}
+.cd.s{border-color:var(--gold);box-shadow:0 5px 16px -9px color-mix(in srgb,var(--a1) 80%,transparent)}
+.lg{flex-wrap:wrap;padding:9px 10px;border-radius:12px;background:var(--elev);border:1px solid var(--bd);line-height:1.8}
+.dli{margin-top:9px;border-radius:17px;background:var(--card);border:1px solid var(--bd);padding:3px 7px 3px 3px;display:flex;align-items:center;gap:5px}
+.dli .item{margin:0;border:0;background:transparent;flex:1;min-width:0}
+.dli .dlb{width:42px;height:42px;display:grid;place-items:center;flex:none;border-radius:13px;background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff}
+.dli .dlb .i{width:19px;height:19px}
+#v-more>.item{min-height:64px;border-radius:17px}
+#v-more>.item .dot{width:43px;height:43px;border:1px solid rgba(255,255,255,.16)}
+.card,.stat,.item,.cat,.dli{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+@media(hover:hover){.card:hover,.stat:hover{border-color:var(--bd2)}.dli:hover{border-color:var(--gold)}}
+@media(max-width:380px){.brandhead.photo-brand{min-height:166px}.daily-hero .row .btn{font-size:.78rem;padding-inline:8px;gap:5px}.daily-hero .ring{width:78px;height:78px}.qprogress-head strong{font-size:1.2rem}.cg{gap:4px}.cd{border-radius:10px;min-height:46px}}
+@media(prefers-reduced-motion:reduce){.card,.stat,.item,.cat,.dli{transition:none}}
